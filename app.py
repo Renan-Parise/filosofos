@@ -2,7 +2,6 @@ import threading
 import time
 
 NUM_FILOSOFOS = 3
-
 garfos = [threading.Semaphore(1) for _ in range(NUM_FILOSOFOS)]
 
 def filosofo(id):
